@@ -43,6 +43,7 @@ app.on('ready', () =>
     show: false,
     width: 1024,
     height: 728,
+    frame: false,
     webPreferences: {
       nodeIntegration: true
     }

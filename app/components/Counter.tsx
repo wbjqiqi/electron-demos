@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
+import ToolBar from './tool-bar';
 
 let styles = require('./Counter.scss');
 
@@ -17,6 +18,7 @@ export class Counter extends React.Component<IProps> {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props;
     return (
       <div>
+          <ToolBar/>
         <div className={styles.backButton} data-tid="backButton">
           <Link to="/">
             <i className="fa fa-arrow-left fa-3x" />

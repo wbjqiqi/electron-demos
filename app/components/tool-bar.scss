@@ -1,19 +1,4 @@
 :local {
-  .container {
-    position: absolute;
-    top: 30%;
-    left: 10px;
-    text-align: center;
-  }
-
-  .container h2 {
-    font-size: 5rem;
-  }
-
-  .container a {
-    font-size: 1.4rem;
-  }
-
   .window_bar {
     display: flex;
     background: #ddd;
@@ -25,6 +10,12 @@
     }
     .center {
       flex: 1;
+      padding-top: 4px;
+      display: flex;
+      .drag_area {
+        flex: 1;
+        -webkit-app-region: drag;
+      }
     }
     .right {
       align-items: center;
