@@ -71,10 +71,33 @@
       "main.js.map",
       "package.json"
     ],
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./resources/icon.ico",
+      "uninstallerIcon": "./resources/icon.ico",
+      "installerHeader": "./resources/icon.ico",
+      "installerSidebar": "./resources/sidebar.bmp",
+      "uninstallerSidebar": "./resources/sidebar.bmp"
+    },
     "directories": {
       "buildResources": "resources",
       "output": "release"
     },
+    "fileAssociations": [
+      {
+        "name": "test file associations",
+        "ext": "elefile",
+        "icon": "./resources/icon.ico",
+        "description": "test file associations"
+      }
+    ],
+    "extraResources": [
+      {
+        "from": "icons/",
+        "to": "icons/"
+      }
+    ],
     "win": {
       "target": "nsis"
     },
