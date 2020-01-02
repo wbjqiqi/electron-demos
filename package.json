@@ -23,7 +23,7 @@
     "package-linux": "npm run build && electron-builder --linux",
     "package-all": "npm run build && electron-builder -mwl",
     "cleanup": "mop -v",
-    "build-main-dev": "cross-env NODE_ENV=development CONFIG_ENV=development node ./node_modules/webpack/bin/webpack --config webpack.config.electron.js --progress --profile --colors",
+    "build-main-dev": "cross-env NODE_ENV=development CONFIG_ENV=development node ./node_modules/webpack/bin/webpack --config webpack.config.electron.js --progress --profile --colors"
   },
   "jest": {
     "moduleNameMapper": {
@@ -202,6 +202,7 @@
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
+    "regedit": "^3.0.3",
     "source-map-support": "^0.5.0"
   },
   "devEngines": {

@@ -9,12 +9,12 @@ const baseConfig = require('./webpack.config.base');
 module.exports = merge(baseConfig, {
   devtool: 'source-map',
 
-  entry: ['./app/main.development'],
+  entry: {'main.development': './app/main.development'},
 
   // 'main.js' in root
   output: {
     path: __dirname,
-    filename: './app/main.js'
+    filename: './app/[name].js'
   },
 
   plugins: [
@@ -25,7 +25,8 @@ module.exports = merge(baseConfig, {
     //   { raw: true, entryOnly: false }
     // ),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.CONFIG_ENV': JSON.stringify(process.env.CONFIG_ENV),
     })
   ],
 
