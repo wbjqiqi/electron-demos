@@ -38,7 +38,8 @@ app/bundle.js
 app/bundle.js.map
 app/style.css
 app/style.css.map
-main-development.js
+main.development.js
+main.development.js.map
 dist
 main.js
 main.js.map
